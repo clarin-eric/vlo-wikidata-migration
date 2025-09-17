@@ -1,0 +1,16 @@
+services:
+  vlo-config-wikidata:
+    image: registry.gitlab.com/clarin-eric/docker-alpine-supervisor-java-base:openjdk21_jre-1.0.12
+    entrypoint: /app/script/entrypoint.bash
+    environment:
+      MAPPING_CSV: "/data/mapping.csv"
+      MAPPING_XML: "/data/mapping.xml"
+      FACET_MAPPING_SOURCE: "/data/facetConcepts.xml"
+      FACET_MAPPING_TARGET: "/data/output/facetConcepts.xml"
+    volumes:
+      - "./script:/app/script:ro"
+      - "../python:/app/python"
+      - "../xslt:/app/xslt"
+      - "../output:/data/output"
+      - "${MAPPING_FILE:-../test/test.csv}:/data/mapping.csv"
+      - "${FACET_MAPPING_FILE:-../test/facetConcepts.xml}:/data/facetConcepts.xml"

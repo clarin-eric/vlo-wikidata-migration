@@ -7,7 +7,7 @@
 	</facetConcept>
 	<facetConcept name="_selfLink">
 		<pattern>/cmd:CMD/cmd:Header/cmd:MdSelfLink/text()</pattern>
-                
+
 		<derivedFacet>_normalizedSelfLink</derivedFacet>
 	</facetConcept>
 	<facetConcept name="_normalizedSelfLink">
@@ -35,34 +35,34 @@
 	<facetConcept name="name">
 		<concept>http://www.isocat.org/datcat/DC-5428</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-5428_65670fd6-3426-68ac-8f29-faef6ffd02ce</concept>
-                    <!-- title statement -->
-                    
+		<!-- title statement -->
+
 		<concept>http://www.isocat.org/datcat/DC-5127</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-5127_f2721b23-921c-46ba-8d4d-88b46aef6976</concept>
-                    <!-- Original (descriptive or general heading as it appears in the resource) -->
-                    
+		<!-- Original (descriptive or general heading as it appears in the resource) -->
+
 		<concept>http://www.isocat.org/datcat/DC-4160</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-4160_192be757-0d8f-f4fe-b10b-d3d50de92482</concept>
 		<concept>http://www.isocat.org/rest/dc/4160</concept>
-                    <!-- CLARIN-D Webservices name -->	
-                    
+		<!-- CLARIN-D Webservices name -->
+
 		<concept>http://www.isocat.org/datcat/DC-4114</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-4114_747bf046-1208-940d-36ba-297e4de49e0c</concept>
 
-                    <!-- book title -->
-                    
-                <concept>http://www.isocat.org/datcat/DC-2545</concept>
+		<!-- book title -->
+
+		<concept>http://www.isocat.org/datcat/DC-2545</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2545_d873f2ab-2a2f-29d6-a9ab-260cde57f227</concept>
-                    <!-- resource title -->
-                 
-                <concept>http://www.isocat.org/datcat/DC-2544</concept>
+		<!-- resource title -->
+
+		<concept>http://www.isocat.org/datcat/DC-2544</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2544_3626545e-a21d-058c-ebfd-241c0464e7e5</concept>
-                    <!-- resource name -->
-                    
-                <concept>http://purl.org/dc/terms/title</concept>
+		<!-- resource name -->
+
+		<concept>http://purl.org/dc/terms/title</concept>
 		<concept>http://purl.org/dc/elements/1.1/title</concept>
 
-                <concept>http://www.isocat.org/datcat/DC-6119</concept>
+		<concept>http://www.isocat.org/datcat/DC-6119</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-6119_ea4226b5-8d55-e71e-730f-2a02e3adbeb4</concept>
 		<!-- title of work -->
 		<concept>http://www.loc.gov/standards/mods/userguide/titleinfo.html#title</concept>
@@ -95,7 +95,7 @@
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:Song/cmdp:Source</blacklistPattern>
 		<!-- Song -->
 	</facetConcept>
-        	<!-- test facets -->
+	<!-- test facets -->
 	<facetConcept name="temporalCoverage">
 		<concept>http://www.isocat.org/datcat/DC-2502</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2502_747eb0cd-03e9-cffb-34cc-d0c8c77e4c5a</concept>
@@ -199,11 +199,11 @@
 		<concept>http://www.isocat.org/datcat/DC-2092</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2092_36cd7ca8-e412-9f29-7ea7-4a3ba4ba2c91</concept>
 		<!-- add? -->
-		
-		
- 		<!-- CLARIN core components -->
- 		<pattern>/cmd:CMD/cmd:Components/*/GeoLocation/Country/label/text()</pattern>
- 		
+
+
+		<!-- CLARIN core components -->
+		<pattern>/cmd:CMD/cmd:Components/*/GeoLocation/Country/label/text()</pattern>
+
 
 		<blacklistPattern>/cmdp:HZSKCorpus/cmdp:Collection/cmdp:OriginLocation/cmdp:Location/cmdp:Country</blacklistPattern>
 		<!-- HZSK -->
@@ -240,20 +240,20 @@
 		<concept>http://purl.org/dc/elements/1.1/language</concept>
 		<concept>http://www.loc.gov/standards/mods/userguide/language.html#languageterm</concept>
 
-                <acceptableContext includeAny="true" includeEmpty="true"/>
-                <rejectableContext includeAny="false"  includeEmpty="false">
-                    <concept>http://www.isocat.org/datcat/DC-4146</concept>
-                    <concept>http://hdl.handle.net/11459/CCR_C-4146_5ccc45c8-d729-c180-2bf1-fccc56dde24d</concept>
-                </rejectableContext>
-		
-                
+		<acceptableContext includeAny="true" includeEmpty="true"/>
+		<rejectableContext includeAny="false" includeEmpty="false">
+			<concept>http://www.isocat.org/datcat/DC-4146</concept>
+			<concept>http://hdl.handle.net/11459/CCR_C-4146_5ccc45c8-d729-c180-2bf1-fccc56dde24d</concept>
+		</rejectableContext>
+
+
 		<pattern>/cmd:CMD/cmd:Components//cmdp:OLAC-DcmiTerms/cmdp:subject/@olac-language</pattern>
 		<pattern>/cmd:CMD/cmd:Components/cmdp:LrtInventoryResource/cmdp:LrtCommon/cmdp:Languages/cmdp:ISO639/cmdp:iso-639-3-code/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/cmdp:mods/cmdp:language/cmdp:languageTerm/text()</pattern>
 
 
- 		<!-- CLARIN core components -->
- 		<pattern>/cmd:CMD/cmd:Components/*/Language/code/text()</pattern>
+		<!-- CLARIN core components -->
+		<pattern>/cmd:CMD/cmd:Components/*/Language/code/text()</pattern>
 
 		<!--  <concept>http://www.isocat.org/datcat/DC-2468</concept>
 		      <concept>http://hdl.handle.net/11459/CCR_C-2468_e4135e12-c272-171e-a8a2-48339228387b</concept> -->
@@ -302,22 +302,22 @@
 
 		<!-- MPI-PL lat-session profile -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lat-session/cmdp:Actors/cmdp:Actor</blacklistPattern>
-		
+
 		<!-- MPI-PL lat-SL-session profile -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lat-SL-session/cmdp:SL-Actors/cmdp:SL-Actor</blacklistPattern>
-		
+
 		<!-- BAS cmdp:media-session-profile -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:media-session-profile/cmdp:media-session/cmdp:media-session-actors/cmdp:media-session-actor</blacklistPattern>
 
 		<!-- Meertens cmdp:Soundbites -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:Soundbites/cmdp:Description/cmdp:Description/@LanguageID</blacklistPattern>
-		
+
 		<derivedFacet>_languageName</derivedFacet>
 	</facetConcept>
 	<facetConcept name="_languageName">
 		<!-- No mapping, values derived from 'languageCode' -->
 	</facetConcept>
-    <facetConcept name="availability">
+	<facetConcept name="availability">
 		<concept>http://www.isocat.org/datcat/DC-2457</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2457_45bbaa1a-7002-2ecd-ab9d-57a189f694a6</concept>
 		<!-- A description of the licensing conditions... -->
@@ -332,49 +332,49 @@
 		<!-- DASISH from DC Rights -->
 		<concept>http://www.isocat.org/datcat/DC-5439</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-5439_98bb103d-476a-7f62-54b4-bf9de24d2229</concept>
-		
+
 		<!-- URL of the license -->
 		<concept>http://www.isocat.org/datcat/DC-6586</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb</concept>
-		
+
 		<!-- TEI header license -->
-                <concept>http://hdl.handle.net/11459/CCR_C-5362_8cffd964-f57e-09ed-daed-eeabbf2d22c0</concept>
+		<concept>http://hdl.handle.net/11459/CCR_C-5362_8cffd964-f57e-09ed-daed-eeabbf2d22c0</concept>
 		<!-- TEI header availability -->
- 		<concept>http://hdl.handle.net/11459/CCR_C-5302_8dfad601-5387-7317-57d1-1f0e65b75af2</concept>
-				
+		<concept>http://hdl.handle.net/11459/CCR_C-5302_8dfad601-5387-7317-57d1-1f0e65b75af2</concept>
+
 		<!-- the DC is used in the distributionType facet -->
 		<concept>http://purl.org/dc/terms/license</concept>
 		<concept>http://purl.org/dc/terms/rights</concept>
-		
+
 		<!-- TEI header availability attributes -->
- 		<pattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:publicationStmt/cmdp:availability/@status</pattern>
- 		
- 		<!-- CLARIN core components -->
- 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/condition/text()</pattern>
- 		
+		<pattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:publicationStmt/cmdp:availability/@status</pattern>
+
+		<!-- CLARIN core components -->
+		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/condition/text()</pattern>
+
 	</facetConcept>
-        <facetConcept name="licenseType">
-            <concept>http://hdl.handle.net/11459/CCR_C-5439_98bb103d-476a-7f62-54b4-bf9de24d2229</concept>
-	 		<pattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:publicationStmt/cmdp:availability/cmdp:ab/@type</pattern>
-        </facetConcept>
-        <facetConcept name="license">
+	<facetConcept name="licenseType">
+		<concept>http://hdl.handle.net/11459/CCR_C-5439_98bb103d-476a-7f62-54b4-bf9de24d2229</concept>
+		<pattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:fileDesc/cmdp:publicationStmt/cmdp:availability/cmdp:ab/@type</pattern>
+	</facetConcept>
+	<facetConcept name="license">
 		<!-- URL of the license -->
 		<concept>http://www.isocat.org/datcat/DC-6586</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-6586_2c79d86a-5a75-0890-d407-7d9cb86b9beb</concept>
-		
+
 		<!-- availability
 		Possibly with filtering:
                 A description of the licensing conditions. -->
 		<concept>http://www.isocat.org/datcat/DC-2453</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8</concept>
-                
+
 		<!-- license
 		Possibly with filtering:
                 A description of the licensing conditions under which the resource can be used. -->
 		<concept>http://www.isocat.org/datcat/DC-2457</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2457_45bbaa1a-7002-2ecd-ab9d-57a189f694a6</concept>
-                
-                <!-- licence type
+
+		<!-- licence type
 		Possibly with filtering:
                 A description of the terms of availability of the resource in simple words. -->
 		<concept>http://www.isocat.org/datcat/DC-3800</concept>
@@ -386,21 +386,19 @@
 
 		<!-- TEI header -->
 		<concept>http://hdl.handle.net/11459/CCR_C-5362_8cffd964-f57e-09ed-daed-eeabbf2d22c0</concept>
-		
+
 		<!-- the DC is used in the distributionType facet -->
 		<concept>http://purl.org/dc/terms/license</concept>
 		<concept>http://purl.org/dc/terms/rights</concept>
-		
- 		<!-- CLARIN core components -->
- 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Licence/identifier/text()</pattern>
- 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Licence/url/text()</pattern>
- 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Licence/label/text()</pattern>
- 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/condition/text()</pattern>
-		
+
+		<!-- CLARIN core components -->
+		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Licence/identifier/text()</pattern>
+		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Licence/url/text()</pattern>
+		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Licence/label/text()</pattern>
+		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/condition/text()</pattern>
+
 	</facetConcept>
-	<facetConcept name="accessInfo">
-                      description="TODO..." definition="TODO...">
-		<!-- A description of the licensing conditions... -->
+	<facetConcept name="accessInfo"> description="TODO..." definition="TODO..."> <!-- A description of the licensing conditions... -->
 		<concept>http://www.isocat.org/datcat/DC-2453</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2453_1f0c3ea5-7966-ae11-d3c6-448424d4e6e8</concept>
 		<!-- A description of the terms of availability of the resource in simple words. -->
@@ -409,21 +407,18 @@
 		<!-- licenceType: Indication of the type of a copyright licence. -->
 		<concept>http://www.isocat.org/datcat/DC-6846</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-6846_d6adb99c-15ac-fac7-7911-f64c48298ce3</concept>
-
-		<concept>http://purl.org/dc/terms/accessRights</concept>       
-		<concept>http://purl.org/dc/terms/rights</concept>            
-		
+		<concept>http://purl.org/dc/terms/accessRights</concept>
+		<concept>http://purl.org/dc/terms/rights</concept>
 		<!-- DASISH from DC Rights -->
 		<!-- <concept>http://www.isocat.org/datcat/DC-5439</concept>
 		     <concept>http://hdl.handle.net/11459/CCR_C-5439_98bb103d-476a-7f62-54b4-bf9de24d2229</concept> -->
 		<!-- the DC is used in the distributionType facet -->
 		<!--<concept>http://purl.org/dc/terms/license</concept>-->
-		
 		<!-- CLARIN core components -->
 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/condition/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/accessRights/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/otherAccessInfo/text()</pattern>
-		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/accessRequirement/text()</pattern>	
+		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/accessRequirement/text()</pattern>
 	</facetConcept>
 	<facetConcept name="organisation">
 		<concept>http://www.isocat.org/datcat/DC-2459</concept>
@@ -434,8 +429,8 @@
 		<concept>http://hdl.handle.net/11459/CCR_C-6134_72c22724-2615-fd70-2eff-8cd3cb59e91d</concept>
 		<concept>http://www.isocat.org/datcat/DC-6702</concept>
 		<!-- distribution rights holder -->
-                <concept>http://hdl.handle.net/11459/CCR_C-6837_8edd5107-ce2f-7f13-b8cd-1bd9750509b2</concept>
-                <!-- data provider -->
+		<concept>http://hdl.handle.net/11459/CCR_C-6837_8edd5107-ce2f-7f13-b8cd-1bd9750509b2</concept>
+		<!-- data provider -->
 
 
 		<pattern>/cmd:CMD/Components/cmdp:WebLichtWebService/cmdp:Service/cmdp:Contact/cmdp:Organisation/text()</pattern>
@@ -446,7 +441,7 @@
 		<!--  IDS WebLichtWebService -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:WebLichtWebService/cmdp:Service/cmdp:Creation/cmdp:Creators/cmdp:Creator</blacklistPattern>
 		<!--  IDS WebLichtWebService -->
-		
+
 		<!-- CLARIN core components -->
 		<pattern>/cmd:CMD/cmd:Components/*/AccessInfo/Contact/AgentInfo/OrganisationInfo/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/*/DistributionInfo/Distributor/label/text()</pattern>
@@ -504,7 +499,7 @@
 		<!-- IDS IDSAGD_Corpus -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:teiHeader/cmdp:profileDesc/cmdp:textClass</blacklistPattern>
 		<!-- BBAW -->
-		
+
 		<!-- CLARIN core components -->
 		<!-- <pattern>/cmd:CMD/cmd:Components/*/Subject/identifier/text()</pattern> -->
 		<pattern>/cmd:CMD/cmd:Components/*/Subject/label/text()</pattern>
@@ -629,18 +624,18 @@
 		<!-- IMS MultiModalCorpus -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:MultimodalCorpus/cmdp:TechnicalInfo</blacklistPattern>
 		<!-- IMS MultiModalCorpus -->
-                <blacklistPattern>/cmd:CMD/cmd:Components/cmdp:corpusProfile/cmdp:resourceCommonInfo/cmdp:distributionInfo/cmdp:licenceInfo</blacklistPattern>
-                <!-- Clarino_B_center_Repository_University_of_Bergen cmdp:corpusProfile -->
-                <blacklistPattern>/cmd:CMD/cmd:Components/cmdp:corpusProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:PID</blacklistPattern>
-                <!-- Clarino_B_center_Repository_University_of_Bergen cmdp:corpusProfile -->
-                <blacklistPattern>/cmd:CMD/cmd:Components/cmdp:corpusProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:url</blacklistPattern>
-                <!-- Clarino_B_center_Repository_University_of_Bergen cmdp:corpusProfile -->
-                <blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lexicalProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:url</blacklistPattern>
-                <!-- Clarino_B_center_Repository_University_of_Bergen cmdp:lexicalProfile -->
-                <blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lexicalProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:PID</blacklistPattern>
-                <!-- Clarino_B_center_Repository_University_of_Bergen cmdp:lexicalProfile -->
-                <blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lexicalProfile/cmdp:resourceCommonInfo/cmdp:distributionInfo/cmdp:licenceInfo/</blacklistPattern>
-                <!-- Clarino_B_center_Repository_University_of_Bergen cmdp:lexicalProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:corpusProfile/cmdp:resourceCommonInfo/cmdp:distributionInfo/cmdp:licenceInfo</blacklistPattern>
+		<!-- Clarino_B_center_Repository_University_of_Bergen cmdp:corpusProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:corpusProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:PID</blacklistPattern>
+		<!-- Clarino_B_center_Repository_University_of_Bergen cmdp:corpusProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:corpusProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:url</blacklistPattern>
+		<!-- Clarino_B_center_Repository_University_of_Bergen cmdp:corpusProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lexicalProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:url</blacklistPattern>
+		<!-- Clarino_B_center_Repository_University_of_Bergen cmdp:lexicalProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lexicalProfile/cmdp:resourceCommonInfo/cmdp:identificationInfo/cmdp:PID</blacklistPattern>
+		<!-- Clarino_B_center_Repository_University_of_Bergen cmdp:lexicalProfile -->
+		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:lexicalProfile/cmdp:resourceCommonInfo/cmdp:distributionInfo/cmdp:licenceInfo/</blacklistPattern>
+		<!-- Clarino_B_center_Repository_University_of_Bergen cmdp:lexicalProfile -->
 	</facetConcept>
 	<facetConcept name="resourceClass">
 		<concept>http://purl.org/dc/terms/type</concept>
@@ -653,10 +648,10 @@
 		<concept>http://www.isocat.org/datcat/DC-3786</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-3786_21c37142-994f-63a8-5a5b-a9fce07681a7</concept>
 
-    <!-- Meta-Share resource type -->
+		<!-- Meta-Share resource type -->
 		<concept>http://hdl.handle.net/11459/CCR_C-6582_2ab1561d-1162-08fd-f7c2-2a706e8c65f9</concept>
 
-    <pattern>/cmd:CMD/cmd:Components/cmdp:LrtInventoryResource/cmdp:LrtCommon/cmdp:ResourceType/text()</pattern>
+		<pattern>/cmd:CMD/cmd:Components/cmdp:LrtInventoryResource/cmdp:LrtCommon/cmdp:ResourceType/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:type/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/cmdp:OLAC-DcmiTerms/cmdp:type/@olac-linguistic-type</pattern>
 		<pattern>/cmd:CMD/cmd:Components/cmdp:mods/cmdp:typeOfResource/text()</pattern>
@@ -677,11 +672,11 @@
 		<pattern>/cmd:CMD/cmd:Components//text()</pattern>
 	</facetConcept>
 	<facetConcept name="keywords">
-                <!-- concept 'metadata tag' -->
-                <concept>http://www.isocat.org/datcat/DC-5436</concept>
+		<!-- concept 'metadata tag' -->
+		<concept>http://www.isocat.org/datcat/DC-5436</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-5436_6ab57c2c-5f8d-3561-6db6-d75da23d2637</concept>
-                <!-- concept 'keyword' -->
-                <concept>http://www.isocat.org/datcat/DC-278</concept>
+		<!-- concept 'keyword' -->
+		<concept>http://www.isocat.org/datcat/DC-278</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-278_336dd81a-626b-713e-c74a-34fa2ca26a71</concept>
 		<!-- not an official ISOcat PID - added to support LrtInventoryResource, should be removed in the future -->
 		<pattern>/cmd:CMD/cmd:Components/cmdp:mods/cmdp:classification/text()</pattern>
@@ -691,13 +686,13 @@
 		<!--  BAS -->
 		<pattern>/cmd:CMD/cmd:Components/cmdp:media-corpus-profile/cmdp:Collection/cmdp:Project/cmdp:Title/text()</pattern>
 		<!--  BAS -->
-		
+
 		<!-- CLARIN core components -->
 		<pattern>/cmd:CMD/cmd:Components/*/Keyword/label/text()</pattern>
 		<!-- <pattern>/cmd:CMD/cmd:Components/*/Keyword/identifier/text()</pattern> -->
 	</facetConcept>
 
-        <!-- test facets -->
+	<!-- test facets -->
 	<facetConcept name="lifeCycleStatus">
 		<concept>http://www.isocat.org/datcat/DC-3818</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-3818_8c4aec73-1654-7565-9575-c4a17425ee29</concept>
@@ -713,14 +708,15 @@
 		<concept>http://hdl.handle.net/11459/CCR_C-6709_cb3572ed-ffd3-04f1-c145-b9c1f26bfc82</concept>
 		<!-- IPR holder -->
 		<concept>http://purl.org/dc/terms/rightsHolder</concept>
-                <!-- Legal Owner -->
-                <concept>http://hdl.handle.net/11459/CCR_C-2956_519a4aab-2f76-0fd3-090e-f0d6b81a7dbb</concept>
+		<!-- Legal Owner -->
+		<concept>http://hdl.handle.net/11459/CCR_C-2956_519a4aab-2f76-0fd3-090e-f0d6b81a7dbb</concept>
 
 	</facetConcept>
 	<facetConcept name="creator">
 		<concept>http://hdl.handle.net/11459/CCR_C-4115_5da7f288-5384-5aaf-8d8e-fe4348165786</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-6130_f11d590d-b9f3-6a81-9f17-22988671e59e</concept>
-		<concept>http://hdl.handle.net/11459/CCR_C-2957_877cc159-3d88-5fb7-b6ad-0b60d1546bb6</concept><!-- pseudonym -->
+		<concept>http://hdl.handle.net/11459/CCR_C-2957_877cc159-3d88-5fb7-b6ad-0b60d1546bb6</concept>
+		<!-- pseudonym -->
 		<concept>http://www.isocat.org/datcat/DC-5040</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-5040_69dea974-61a9-00c1-cbf8-c714cdee6918</concept>
 		<concept>http://hdl.handle.net/11459/CCR_C-2512_e8061b33-c5f3-7f6c-184d-a4311549ba92</concept>
@@ -732,7 +728,7 @@
 		<!-- CLARIN core components -->
 		<pattern>/cmd:CMD/cmd:Components/*/Creator/label/text()</pattern>
 		<pattern>/cmd:CMD/cmd:Components/*/Creator/AgentInfo/PersonInfo/name/text()</pattern>
-		
+
 		<!-- HZSK CommunicationProfile, values like "Barbara", "Mother of Barbara" etc. -->
 		<blacklistPattern>/cmd:CMD/cmd:Components/cmdp:CommunicationProfile/cmdp:SpeakerInfo/cmdp:ActorPersonal/cmdp:Pseudonym</blacklistPattern>
 	</facetConcept>
